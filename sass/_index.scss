@@ -6,6 +6,8 @@ body {
   min-width: 100%;
 }
 
+
+// Navigation =========================================================
 .navigation {
   position: fixed;
   top: 0;
@@ -14,7 +16,7 @@ body {
   opacity: 0.9;
 
   background-color: $color-primary;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem;
   color: $color-white;
   border-bottom: 2px solid $color-secondary;
 
@@ -83,6 +85,56 @@ body {
     }
   }
 }
+
+// Main content =========================================================
+.main {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url('../img/code.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .content {
+    text-align: center;
+    color: $color-white;
+    padding: 0.5rem;
+
+    &__header {
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+    &__paragraph {
+      font-size: 1rem;
+      font-weight: 100;
+      letter-spacing: 1px;
+      line-height: 180%;
+    }
+  }
+
+  @media(min-width: 1025px) {
+    .content {
+      &__header {
+        font-size: 3.2rem;
+        font-weight: 500;
+      }
+
+      &__paragraph {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
 
 // Footer =========================================================
 .footer {
