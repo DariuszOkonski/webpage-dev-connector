@@ -1,0 +1,34 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  margin: 0.4rem;
+  font-size: 1rem;
+  font-weight: 100;
+  cursor: pointer;
+
+
+  @media(min-width: 1025px) {
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+.btn-secondary {
+  color: $color-white;
+  background-color: $color-secondary;
+
+  &:hover {
+    background-color: lighten($color: $color-secondary, $amount: 5)
+  }
+}
+
+.btn-light {
+  color: $color-primary;
+  background-color: $color-gray;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-primary;
+  }
+}
