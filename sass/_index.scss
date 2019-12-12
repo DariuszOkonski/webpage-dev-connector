@@ -4,7 +4,6 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   min-width: 100%;
-  min-height: 100vh;
 }
 
 .navigation {
@@ -12,6 +11,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  opacity: 0.9;
 
   background-color: $color-primary;
   padding: 1rem 0.5rem;
@@ -81,5 +81,25 @@ body {
         }
       }
     }
+  }
+}
+
+// Footer =========================================================
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: $color-primary;
+  color: $color-white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-top: 2px solid $color-secondary;
+  font-weight: 100;
+  opacity: 0.9;
+
+  @media(min-width: 1025px) {
+    font-weight: 300;
   }
 }
