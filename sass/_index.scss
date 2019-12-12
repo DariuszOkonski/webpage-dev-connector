@@ -1,8 +1,85 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap');
 
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   min-width: 100%;
   min-height: 100vh;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: $color-primary;
+  padding: 1rem 0.5rem;
+  color: $color-white;
+  border-bottom: 2px solid $color-secondary;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo {
+    margin: 0.5rem 0;
+
+    a {
+      font-weight: 100;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: $color-white;
+    }
+  }
+
+  .nav {
+    &__items {
+      list-style-type: none;
+      display: flex;
+    }
+
+    &__link {
+      display: block;
+      text-decoration: none;
+      color: $color-white;
+      font-size: 1rem;
+      font-weight: 100;
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+@media(min-width: 1025px) {
+  .navigation {
+    padding: 0.5rem 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .logo {
+      a {
+        font-weight: 300;
+        font-size: 2rem;
+
+        &:hover {
+          color: $color-secondary;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .nav {
+
+      &__link {
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding: 0 1rem;
+
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
 }
