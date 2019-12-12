@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap");
 *,
 *::before,
 *::after {
@@ -23,5 +23,83 @@ body {
   font-size: 16px;
   min-width: 100%;
   min-height: 100vh;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #343a40;
+  padding: 1rem 0.5rem;
+  color: #fff;
+  border-bottom: 2px solid #17a2b8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .logo {
+  margin: 0.5rem 0;
+}
+
+.navigation .logo a {
+  font-weight: 100;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation .nav__items {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation .nav__link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 1025px) {
+  .navigation {
+    padding: 0.5rem 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navigation .logo a {
+    font-weight: 300;
+    font-size: 2rem;
+  }
+  .navigation .logo a:hover {
+    color: #17a2b8;
+    cursor: pointer;
+  }
+  .navigation .nav__link {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0 1rem;
+  }
+  .navigation .nav__link:hover {
+    color: #17a2b8;
+  }
 }
 /*# sourceMappingURL=main.css.map */
