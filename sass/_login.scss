@@ -1,6 +1,6 @@
 .login {
   width: 100%;
-  min-height: 100vh;
+  // min-height: 100vh;
   padding: 2rem;
   margin-top: 4rem;
 
@@ -50,8 +50,13 @@
     }
   }
 
+  @media(max-width: 1024px) and (orientation: landscape) {
+    margin-top: 4rem;
+  }
+
   @media(min-width: 1025px) {
     justify-content: start;
+    margin-top: 4rem;
 
     .error {
       font-size: 1.2rem;
