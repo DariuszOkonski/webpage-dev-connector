@@ -1,0 +1,293 @@
+.profile {
+  margin-top: 4rem;
+  padding: 2rem;
+
+  .btn {
+    margin: 1rem 0;
+  }
+
+  //Person
+  &__person {
+    background-color: $color-secondary;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    color: $color-white;
+
+    .image {
+      width: 200px;
+      margin: 0 auto;
+
+      img {
+        display: block;
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .header {
+      font-size: 1.6rem;
+      font-weight: 300;
+      margin: 0.5rem 0;
+    }
+
+    .paragraph-large {
+      font-size: 1rem;
+      margin: 0.2rem 0;
+      font-weight: 300;
+    }
+
+    .paragraph-small {
+      font-size: 0.8rem;
+      margin: 0.2rem 0;
+      font-weight: 300;
+    }
+
+    .socials {
+      i {
+        font-size: 1.4rem;
+        margin: 0.2rem;
+      }
+    }
+
+    @media(min-width: 1025px) {
+      .header {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+      }
+
+      .paragraph-large {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+      }
+
+      .paragraph-small {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+      }
+
+      .socials {
+        i {
+          font-size: 1.8rem;
+          margin: 0.5rem;
+          cursor: pointer;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  //Bio
+  &__bio {
+    background-color: $color-gray;
+    border: 1px solid darken($color: $color-gray, $amount: 10);
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    .header {
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: $color-secondary;
+      margin: 0.5rem 0;
+    }
+
+    .paragraph {
+      color: $color-primary;
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 0.2rem 0;
+    }
+
+    .skills {
+      // background-color: green;
+      margin: 0 auto;
+      width: 50%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @media(orientation: landscape) {
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-around;
+      }
+    }
+
+    @media(min-width: 1025px) {
+      .header {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+      }
+
+      .paragraph {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+
+  //Credentials
+  &__credentials {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .experience,
+    .education {
+      background-color: $color-gray;
+      border: 1px solid darken($color: $color-gray, $amount: 10);
+      padding: 1rem;
+
+      .header {
+        color: $color-secondary;
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin: 0.5rem 0;
+      }
+
+      .header__small {
+        font-size: 1rem;
+        margin: 0.2rem 0;
+        color: $color-primary;
+      }
+
+      .paragraph {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0.2rem 0;
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .experience {
+      margin-bottom: 1rem;
+
+      .border {
+        margin: 1rem 0;
+        border-bottom: 1px dotted darken($color:$color-gray, $amount: 10);
+      }
+    }
+
+    @media(min-width: 1025px) {
+      flex-direction: row;
+
+      .experience,
+      .education {
+        padding: 1rem;
+
+        .header {
+          font-size: 1.8rem;
+          margin: 1rem 0;
+        }
+
+        .header__small {
+          font-size: 1.2rem;
+          margin: 0.5rem 0;
+        }
+
+        .paragraph {
+          font-size: 1.2rem;
+          font-weight: 300;
+
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .experience {
+        margin: 0 1rem 0 0;
+      }
+    }
+  }
+
+  //Repos
+  &__github {
+
+    .header {
+      color: #17a2b8;
+      font-size: 1.6rem;
+      font-weight: 300;
+      margin: 0.5rem 0;
+
+      @media(min-width: 1025px) {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+      }
+    }
+
+
+    .repo {
+      padding: 0.5rem;
+      background-color: $color-gray;
+      border: 1px solid darken($color: $color-gray, $amount: 10);
+      color: $color-primary;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+
+      display: flex;
+      flex-direction: column;
+
+      @media(orientation: landscape) {
+        flex-direction: row;
+
+        .repo__left {
+          width: 70%;
+          margin-left: 1rem;
+        }
+
+        .repo__right {
+          width: 30%;
+        }
+      }
+
+      .repo__left {
+
+        .header {
+          color: $color-secondary;
+          font-size: 0.8rem;
+        }
+      }
+
+      @media(min-width: 1025px) {
+        font-size: 1rem;
+
+        .repo__left {
+          .header {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .repo__right {
+        text-align: center;
+
+        div {
+          margin: 0.2rem 0;
+          padding: 0.2rem;
+        }
+
+        .stars {
+          background-color: $color-secondary;
+        }
+
+        .watchers {
+          background-color: darken($color: $color-gray, $amount: 20);
+        }
+
+        .forks {
+          background-color: darken($color: $color-gray, $amount: 30);
+        }
+      }
+    }
+  }
+
+}
