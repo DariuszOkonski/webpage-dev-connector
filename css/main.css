@@ -464,4 +464,308 @@ body {
     color: #17a2b8;
   }
 }
+
+.profile {
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.profile .btn {
+  margin: 1rem 0;
+}
+
+.profile__person {
+  background-color: #17a2b8;
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.profile__person .image {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.profile__person .image img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profile__person .header {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+
+.profile__person .paragraph-large {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+  font-weight: 300;
+}
+
+.profile__person .paragraph-small {
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+  font-weight: 300;
+}
+
+.profile__person .socials i {
+  font-size: 1.4rem;
+  margin: 0.2rem;
+}
+
+@media (min-width: 1025px) {
+  .profile__person .header {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+  .profile__person .paragraph-large {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  .profile__person .paragraph-small {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  .profile__person .socials i {
+    font-size: 1.8rem;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+  .profile__person .socials i:hover {
+    color: #343a40;
+  }
+}
+
+.profile__bio {
+  background-color: #ccc;
+  border: 1px solid #b3b3b3;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.profile__bio .header {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #17a2b8;
+  margin: 0.5rem 0;
+}
+
+.profile__bio .paragraph {
+  color: #343a40;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0.2rem 0;
+}
+
+.profile__bio .skills {
+  margin: 0 auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (orientation: landscape) {
+  .profile__bio .skills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 1025px) {
+  .profile__bio .header {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+  .profile__bio .paragraph {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+}
+
+.profile__credentials {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile__credentials .experience,
+.profile__credentials .education {
+  background-color: #ccc;
+  border: 1px solid #b3b3b3;
+  padding: 1rem;
+}
+
+.profile__credentials .experience .header,
+.profile__credentials .education .header {
+  color: #17a2b8;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+
+.profile__credentials .experience .header__small,
+.profile__credentials .education .header__small {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+  color: #343a40;
+}
+
+.profile__credentials .experience .paragraph,
+.profile__credentials .education .paragraph {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0.2rem 0;
+}
+
+.profile__credentials .experience .paragraph span,
+.profile__credentials .education .paragraph span {
+  font-weight: bold;
+}
+
+.profile__credentials .experience {
+  margin-bottom: 1rem;
+}
+
+.profile__credentials .experience .border {
+  margin: 1rem 0;
+  border-bottom: 1px dotted #b3b3b3;
+}
+
+@media (min-width: 1025px) {
+  .profile__credentials {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .profile__credentials .experience,
+  .profile__credentials .education {
+    padding: 1rem;
+  }
+  .profile__credentials .experience .header,
+  .profile__credentials .education .header {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+  .profile__credentials .experience .header__small,
+  .profile__credentials .education .header__small {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  .profile__credentials .experience .paragraph,
+  .profile__credentials .education .paragraph {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  .profile__credentials .experience .paragraph span,
+  .profile__credentials .education .paragraph span {
+    font-weight: bold;
+  }
+  .profile__credentials .experience {
+    margin: 0 1rem 0 0;
+  }
+}
+
+.profile__github .header {
+  color: #17a2b8;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 1025px) {
+  .profile__github .header {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+}
+
+.profile__github .repo {
+  padding: 0.5rem;
+  background-color: #ccc;
+  border: 1px solid #b3b3b3;
+  color: #343a40;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (orientation: landscape) {
+  .profile__github .repo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .profile__github .repo .repo__left {
+    width: 70%;
+    margin-left: 1rem;
+  }
+  .profile__github .repo .repo__right {
+    width: 30%;
+  }
+}
+
+.profile__github .repo .repo__left .header {
+  color: #17a2b8;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1025px) {
+  .profile__github .repo {
+    font-size: 1rem;
+  }
+  .profile__github .repo .repo__left .header {
+    font-size: 1rem;
+  }
+}
+
+.profile__github .repo .repo__right {
+  text-align: center;
+}
+
+.profile__github .repo .repo__right div {
+  margin: 0.2rem 0;
+  padding: 0.2rem;
+}
+
+.profile__github .repo .repo__right .stars {
+  background-color: #17a2b8;
+}
+
+.profile__github .repo .repo__right .watchers {
+  background-color: #999999;
+}
+
+.profile__github .repo .repo__right .forks {
+  background-color: gray;
+}
 /*# sourceMappingURL=main.css.map */
