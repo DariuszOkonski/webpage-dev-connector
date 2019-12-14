@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
+  margin-top: 4rem;
 
   display: flex;
   flex-direction: column;
@@ -9,7 +10,6 @@
   align-items: center;
 
   .error {
-    margin-top: 4rem;
     font-weight: 300;
   }
 
@@ -44,7 +44,7 @@
 
     .btn {
       margin: 0.5rem 0;
-      width: 60px;
+      width: 80px;
       font-weight: 300;
       text-align: center;
     }
