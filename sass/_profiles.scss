@@ -1,0 +1,118 @@
+.profiles {
+  margin-top: 4rem;
+  padding: 2rem;
+  // background-color: yellow;
+
+  &__header {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    color: $color-secondary;
+  }
+
+  &__paragraph {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    color: #343a40;
+  }
+
+  .developer {
+    display: flex;
+    background-color: $color-gray;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid darken($color: $color-gray, $amount: 10);
+
+    .developer__left {
+      display: flex;
+      flex-direction: column;
+
+
+      .img {
+        img {
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      .credentials {
+        text-align: center;
+        color: $color-primary;
+
+        &__header {
+          font-size: 1.4rem;
+          margin: 1rem 0;
+        }
+
+        &__paragraph {
+          font-size: 0.8rem;
+          margin: 0.5rem 0;
+        }
+      }
+
+    }
+
+    .developer__right {
+      display: none;
+    }
+  }
+
+  @media(min-width: 1025px) {
+    &__header {
+      font-size: 2.2rem;
+      padding: 2rem 0;
+    }
+
+    &__paragraph {
+      font-size: 1.2rem;
+      padding: 1rem 0;
+    }
+
+    .developer {
+      .developer__left {
+        flex-direction: row;
+
+        .img {
+          flex-basis: 35%;
+          margin-right: 20px;
+        }
+
+        .credentials {
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          &__header {
+            font-size: 1.6rem;
+            font-weight: 300;
+            margin: 0.5rem 0;
+          }
+
+          &__paragraph {
+            font-weight: 300;
+            font-size: 1rem;
+            margin: 0.2rem 0;
+          }
+
+          .btn {
+            margin: 0.2rem 0;
+            width: 140px;
+          }
+        }
+      }
+
+      .developer__right {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+          margin: 0.2rem 0;
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}
