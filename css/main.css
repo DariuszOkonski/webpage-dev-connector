@@ -225,6 +225,12 @@ body {
   opacity: 0.9;
 }
 
+@media (max-width: 1024px) and (orientation: landscape) {
+  .footer {
+    display: none;
+  }
+}
+
 @media (min-width: 1025px) {
   .footer {
     font-weight: 300;
